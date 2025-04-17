@@ -1,0 +1,304 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #F1EFEC;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+
+.menu-lateral {
+  position: fixed;
+  top: 55%;
+  left:15px; /* 2cm da borda esquerda */
+  transform: translateY(-50%);
+  background-color: #D4C9BE;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #123458;
+  display: flex;
+  flex-direction: column; /* links em coluna */
+  align-items: center;     /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  gap: 25px;
+  height: 65vh;            /* Altura de 65% da tela */
+  width: 80x;
+}
+
+.menu-lateral a {
+  display: flex;
+  flex-direction: column;  /* ícone em cima, texto embaixo (se quiser lado a lado, troque para "row") */
+  align-items: center;
+  gap: 3px;
+  padding: 15px;
+  background-color: #f1efec8e;
+  color: #123458;
+  text-decoration: none;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+}
+
+.menu-lateral a:hover {
+  background-color: #F1EFEC;
+}
+
+.menu-lateral img.icone {
+  width: 40px;
+  height: 40px;
+}
+
+.painel-flutuante {
+  position: fixed;
+  position: fixed;
+  top: 45px; /* Afastado 150px do topo */
+  left:5cm; /* Afastado 8cm da esquerda */
+  transform: translateY(-50%);
+  background-color: #D4C9BE;
+  padding: 19px;
+  border-radius: 10px;
+  border: 1px solid #123458;
+  color: #F1EFEC;
+  width: 900px; /* Largura do painel */
+  display: flex;
+  justify-content: space-between; /* Espaça a barra de pesquisa e o perfil */
+  align-items: center; /* Alinha verticalmente os itens */
+  height: 40px;
+}
+
+.painel-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espaço entre os itens */
+  width: 100%;
+}
+
+.search-bloco {
+  position: fixed;
+  border-radius: 10px;
+  width: 70%; /* A barra de pesquisa ocupa 70% da largura do painel */
+}
+
+.search-bloco input {
+  padding: 10px 40px 10px 15px; /* Padding para o ícone de filtro à direita */
+  border-radius: 5px;
+  border: none;
+  width: 95%; /* Faz a barra de pesquisa se ajustar ao tamanho do painel */
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #123458;
+  background-color: #f1efec8e;
+  color: #123458;
+}
+
+.search-bloco input::placeholder {
+  color: #123458;
+}
+
+/* Estilo do ícone de filtro (agora uma imagem) */
+.icone-filtro {
+  position: absolute;
+  right: 10px; /* Posiciona a imagem à direita dentro do input */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.img-filtro {
+  width: 30px; /* Ajuste o tamanho conforme necessário */
+  height: 30px;
+}
+
+.perfil-bloco {
+  display: flex;
+  align-items: left;
+  gap: 10px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.icone-perfil {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #123458;
+}
+
+.nome {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.cargo {
+  font-size: 14px;
+  color: #123458;
+}
+
+
+.logo-container {
+  position: fixed;
+  top: 30px;        /* Ajuste a distância do topo */
+  left: 20px;      /* Distância entre o menu e o painel (ajuste se necessário) */
+  z-index: 10;
+}
+
+.logo {
+  height: 36px;     /* Tamanho da logo */
+  width: 130px;
+}
+
+
+
+.retangulo-fundo {
+  position: absolute;
+  top: 110px;                  /* Ajuste para deixar espaço pro painel */
+  left: 188px;                   /* Mesmo left do painel-flutuante */
+  width: 938px;
+  min-height: 71vh;           /* Altura mínima de 71% da tela */
+  background-color: #D4C9BE;
+  border-radius: 10px;
+  border: 1px solid #123458;
+  z-index: 0;
+  padding: 20px;              /* Espaço interno opcional */
+  box-sizing: border-box;
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+
+
+.ficha-caso {
+  background-color: #D4C9BE;
+  border-radius: 15px;
+  border: 1px solid #123458;
+  padding: 20px;
+  width: 500px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  flex-shrink: 0;
+  flex: 1;
+  max-width: 700px;
+}
+
+.cabecalho {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 15px;
+  margin-bottom: 20px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 150px;
+}
+
+.campo label {
+  font-weight: bold;
+  font-size: 14px;
+  color: #123458;
+}
+
+.campo input {
+  background-color: #f1efec8e;
+  border: 1px solid #123458;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #123458;
+  font-weight: bold;
+}
+
+.descricao {
+  background-color: #f1efec8e;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  min-height: 200px;
+  color: #123458;
+  border: 1px solid #123458;
+}
+
+.container-caso {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px; /* espaço entre os blocos */
+  padding: 20px;
+}
+
+
+.mais {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+
+
+.cabecalho .campo input {
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: 1px solid #123458;
+  background-color: #f1efec8e;
+}
+
+
+.salvar:hover {
+  background-color: #F1EFEC;
+}
+
+
+
+.salvar {
+  background-color: #f1efec8e;
+  color: #123458;
+  border: 1px solid #123458;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.salvar a:hover {
+  background-color: #F1EFEC;
+}
+
+
+.salvar {
+  width: 70%;
+  margin: 20px auto; /* centraliza horizontalmente */
+  background-color: #f1efec8e;
+  border: 1px solid #123458;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block; /* importante para o auto funcionar */
+  text-align: center;
+}
+
+textarea, input[type="text"] {
+  background-color: #f1efec8e; /* cor da caixa */
+  color: #123458;            /* cor do texto */
+  border: 1px solid #123458;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+textarea, input[type="file"], input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
