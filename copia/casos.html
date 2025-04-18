@@ -10,9 +10,6 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-
-
-
 </head>
 <body>
 
@@ -34,30 +31,31 @@
       <div class="cabecalho">
         <div class="campo">
           <label for="titulo">Título:</label>
-          <input type="text" id="titulo" value="Caso 1" readonly>
+          <input type="text" id="titulo" placeholder="Caso 1" required>
         </div>
         <div class="campo">
           <label for="codigo">Código:</label>
-          <input type="text" id="codigo" value="26783651" readonly>
+          <input type="text" id="codigo" placeholder="26783651" required>
         </div>
         <div class="campo">
           <label for="perito">Perito:</label>
-          <input type="text" id="perito" value="José" readonly>
+          <input type="text" id="perito" placeholder="José" required>
         </div>
         <div class="campo">
           <label for="status">Status:</label>
-          <input type="text" id="status" value="Em andamento ou concluído" readonly>
+          <input type="text" id="status" placeholder="Em andamento ou concluído" required>
         </div>
         <div class="campo">
           <label for="data-ocorrencia">Data de ocorrência:</label>
-          <input type="date" id="data-emissao" style="width: 218px;" placeholder="20/02/2025" required>
-        <div class="campo">
-          <label for="local">Local:</label>
-          <input type="text" id="local" value="Recife, Pernambuco" readonly>
+          <input type="text" id="data-ocorrencia" placeholder="20/02/2025" required>
         </div>
         <div class="campo">
           <label for="data-emissao">Data de emissão:</label>
-          <input type="date" id="data-emissao" style="width: 218px;" placeholder="20/02/2025" required>
+          <input type="text" id="data-emissao" placeholder="20/02/2025" required>
+        </div>
+        <div class="campo">
+          <label for="local">Local:</label>
+          <input type="text" id="local" placeholder="Digite o local" required>
         </div>
       </div>
     
